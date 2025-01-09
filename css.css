@@ -1,0 +1,276 @@
+nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+#ch, #lab_petit, .menu_petit, .imglangpetit{
+    display: none;
+} 
+.imglang {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+}
+a {
+    width: 2%;
+    font-weight: bolder;
+    color: #ffffff;
+}
+.ban {
+    width: 20%;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    border: 2px solid #F7AF3E;
+}
+.Image-image {
+    width: 100%;
+    border-radius: 10px;
+    padding-top: 5%;
+}
+.banniere{
+    width: 100%;
+    height: 100%;
+}
+header {  
+    color: white;
+    background: -webkit-linear-gradient(top, rgba(234,92,13,1) 0%, rgba(183,74,14,1) 100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav >ul{
+    display:flex;
+    list-style: none;
+    align-items: center;
+}
+nav >ul >li:hover{
+    background-color: rgb(228, 217, 198);
+}
+
+.elt {
+    position: relative;
+    color: rgb(255, 255, 255);
+}
+.eltparcours {
+    position: relative;
+    background-color: #F7AF3E ;
+    color: black;
+    border-radius: 8%;
+}
+li{
+    display: block;
+    padding: 7px;
+}
+.sous-elt {
+    display:none;
+    list-style: none;
+    width: 100%;
+    background-color: rgb(214, 185, 141);
+    position: absolute;
+    top: 100%;
+    margin: 0;
+    padding: 0;
+    left: 0;
+
+}
+.elt:hover >.sous-elt{
+    display:block;
+
+}
+
+.sous-elt li {
+    width: 100px;
+    background-color: rgb(214, 185, 141);
+}
+.sous-elt li:hover {
+    background-color: rgb(226, 199, 125);
+}
+.img_princi{
+    width:100vw;
+    height:auto;
+    margin-left: -85px;
+}
+.img_secondaire{
+    width:50%;
+    height:auto;
+    padding-right: 40px;
+    border-radius: 60px;
+}
+h1 {
+    font-size: 96px;
+    color:#F7AF3E ;
+    text-align: center;
+    font-family: "Dyno Bold";
+}
+
+body {
+    background-color: #333333; 
+    color:white;
+    padding-top:80px;
+    padding-left:60px;
+    font-family: 'Cicle', sans-serif;
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 64px;
+    color:#F7AF3E ;
+    font-family: "Dyno Bold";
+}
+b {
+    color:#F7AF3E ;
+}
+li {
+    padding-top: 10px;
+}
+.orange {
+    border-radius: 50px;
+    background-color: rgb(255, 102, 0);
+    padding: 30px;
+    margin: 80px;
+}
+
+.orange >img {
+    width: 15%;
+    height: auto;
+    padding: 20px;
+    float: left;
+}
+
+.orange::after {
+    content:"";
+    display: block;
+    clear: both;
+}
+
+td{
+    width:50%
+}
+p {
+    padding: 20px;
+    display: block;
+}
+
+section {
+    background-color: #505050;
+    border-radius: 60px;
+    border: solid 7px #F7AF3E;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+table {
+    padding-bottom: 50px;
+}
+.texte {
+    display: block;
+    width: 40%;
+}
+.block-img-txt {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.block {
+    padding: 40px;
+    background-color: #1E3A84;
+    margin-left: 5%;
+    margin-right:5% ;
+}
+.block >section {
+    text-align: center;
+    padding: 40px;
+}
+.block img {
+    width: 80%;
+}
+
+.footer-container {
+    display: flex;
+    text-align: left;
+    padding: 20px;
+    background-color: #505050;
+    color: #fff;
+}
+.footer-container h3 {
+    margin-bottom: 10px;
+}
+
+.footer-container p {
+    margin: 5px 0;
+}
+@media (max-width: 1000px) {
+    .img_secondaire{
+        width: 90%;
+        margin: 40px;
+    }
+    p,li,ul {
+        font-size: 16px;
+    }
+    .block-img-txt {
+        flex-direction: column;
+    }
+    .texte {
+        width: 70%;
+    }
+    h1 {
+        font-size: 60px;
+    }
+    h2 {
+        font-size:44px;
+    }
+}
+
+@media (max-width:700px) {
+
+    nav, nav>li {
+        display: none;
+    }
+
+    #lab_petit {
+        text-align: left;
+        display:flex;
+        color:white;
+        border-radius: 30px;
+        padding: 10px;
+        position: relative;
+        top:-40px
+    }
+    #ch:checked + .menu_petit {
+        display: block;
+        position: relative;
+        left:10px;
+        list-style: none;
+        top:-60px;
+        background-color: rgba(183,74,14,1);
+        width: fit-content;
+    }
+
+    #ch:checked + .menu_petit >li {
+        position: relative;
+        left: -40px;
+        padding-left: -70px;
+    }
+    .logo2 {
+        background-color: gray;
+        width: 40px;
+        height: auto;
+       margin-top: 40px;
+    }
+    header {
+        height: 10%;
+        width: 100%;
+    }
+    #ch:checked + .menu_petit .imglangpetit {
+        display: block;
+        width: 40px;
+        height: auto;
+
+    }
+}
