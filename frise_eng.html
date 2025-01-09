@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://db.onlinewebfonts.com/c/65f0d0406288c83cb989beec8f0f1b1b?family=Dyno+Bold" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/cicle" rel="stylesheet">
+  <title>Frise </title>
+  <link rel="stylesheet" href="css.css">
+  <style>
+    .conteneur {
+      text-align: center;
+    }
+
+    .bouton-declencheur {
+      padding: 10px 20px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #007bff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .bouton-declencheur:hover {
+      background-color: #0056b3;
+    }
+
+    .boite-cachee {
+      display: none;
+      opacity: 0;
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #505050;
+      border: 2px solid #007bff;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: visibility 0.4s, opacity 0.4s;
+    }
+    .bouton-declencheur:focus + .boite-cachee {
+      display:block;
+      opacity: 1;
+      -webkit-animation: scale-up-bottom 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+              animation: scale-up-bottom 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
+
+    @keyframes scale-up-bottom {
+      0% {
+        -webkit-transform: scale(0.5);
+                transform: scale(0.5);
+        -webkit-transform-origin: 50% 100%;
+                transform-origin: 50% 100%;
+      }
+      100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        -webkit-transform-origin: 50% 100%;
+                transform-origin: 50% 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="acceuil_eng.html" class="ban"> <img src="banniere.jpg" alt="MCN" class="banniere"> </a>
+    <ul>
+      <li class="eltparcours">Courses
+          <ul class="sous-elt">
+              <li>The essentials</li>
+              <li>Trends</li>
+          </ul>
+      </li>
+      <li class="elt">Monuments</li>
+      <li class="elt">Districts
+          <ul class="sous-elt">
+              <li>Restaurants</li>
+              <li>Hotels</li>
+              <li>Transportation</li>
+          </ul>
+      </li>
+      <li class="elt">Traditions
+          <ul class="sous-elt">
+              <li>Festivals</li>
+              <li>Folklore</li>
+          </ul>
+      </li>
+      <li class="elt">Leisure and culture
+          <ul class="sous-elt">
+              <li>Pop cultur</li>
+              <li>Sports</li>
+          </ul>
+      </li>
+      <li class="elt">History
+          <ul class="sous-elt">
+              <li><a href="frise.html">Kyoto foundation </a></li>
+              <li>History of Japan</li>
+          </ul>
+      </li>
+  </ul>
+  <a href="frise.html" ><img src="france-flat-rounded-flag-with-transparent-background-free-png.webp" alt="langue française" class="imglang"></a>
+      <a href="frise_eng.html" ><img src="circle-flag-of-uk-free-png.webp" alt="langue anglaise" class="imglang"></a>
+</nav>
+<label for="ch" id="lab_petit"><img src="menu.png" class="logo2"></label>
+<input type="checkbox" id="ch"/>
+<ul class="menu_petit">
+  <li class="style-hori"><a href="bienseance.html" class="element-menu">Bienséance</a></li>
+  <li class="style-hori"><a href="frise.html" class="element-menu" >Frise</a></li> 
+  <li><a href="frise.html" ><img src="france-flat-rounded-flag-with-transparent-background-free-png.webp" alt="langue française" class="imglangpetit"></a>
+<li><a href="frise_eng.html" ><img src="circle-flag-of-uk-free-png.webp" alt="langue anglaise" class="imglangpetit"></a></li>
+</ul>
+</header>
+  <img class="img_princi" src="https://thumbs.dreamstime.com/b/kyoto-japon-dans-le-secteur-de-higashiyama-avec-des-fleurs-cerisier-%C3%A0-l-aube-pendant-printemps-138986609.jpg">
+  <div class="block">
+    <h2>Kyoto foundation</h2>
+    <section>
+      <p>6th century: Prince Shotoku introduces Buddhism to Japan
+      </p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Kouryuji_Taishiden.jpg/1280px-Kouryuji_Taishiden.jpg">
+      <p>In 794, Emperor Kammu proclaimed Kyoto (formerly known as Heian-kyō, or “Capital of Peace”) the new imperial capital.
+      </p><p> <b>Monuments worth visiting:</b>  Asuka-dera or Kōryū-ji temples</p>
+        <div class="conteneur">
+      <button class="bouton-declencheur">See more</button>
+      <div class="boite-cachee">
+        <p>Buddhism and the founding of Kyoto <br><br>
+          In the 6th century, Buddhism arrived in Japan thanks to Prince Shōtoku, marking a decisive turning point in the country's history. This new religion, which had originated in China and Korea, not only transformed Japanese spirituality: it also overturned politics, introducing concepts of governance inspired by Buddhist ideals. This influence can still be seen today in monuments such as the Asuka-dera and Horyu-ji temples, built at the time to embody this new faith. <br><br>
+          Moreover, the Kansai region, home of Kyoto, quickly became the political and spiritual center of the country. In 794, Emperor Kammu decided to proclaim Kyoto (formerly known as Heian-kyō, or “Capital of Peace”) the new imperial capital. This choice symbolized a desire for stability and prosperity, marking the beginning of the Heian era (794-1185).</p>
+      </div>
+    </div>
+</section>
+</div>
+<div class="block" style=" background: linear-gradient(#1E3A84, #064E3B );">
+    <h2>The Heian period</h2>
+    <section>
+      <p>The Heian period: Japan's golden age, marked by the apogee and refinement of the Kyoto imperial court.</p>
+      <div class="block-img-txt" style="text-align: left;flex-wrap: nowrap;flex-direction: row;">
+        <img style="width: 50%;height: auto;"src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Kyotopalace.jpg/1280px-Kyotopalace.jpg">  
+        <div class="texte" style="width: 40%;">    
+            <p>
+              <ul>The arts thrive with :
+                <li>Waka poetry</li>
+                <li>Literature ( including Murasaki Shikibu's The Tale of Genji)</li>
+                <li>Emaki</li> 
+              </ul>
+            </p>
+        </div>  
+    </div>
+    <p><b>Monument worth visiting:</b> Imperial Palace of Kyoto</p>
+    <div class="conteneur">
+      <button class="bouton-declencheur">See more</button>
+      <div class="boite-cachee">
+        <p>This period is considered Japan's golden age, marked by the apogee of imperial power. Kyoto's Imperial Palace (Kyoto Gosho) still illustrates the elegance and refinement of the imperial court, which dictated the tastes and cultural standards of the time. <br><br>
+          During the Heian era, the arts flourished like never before: <br> <br>
+          <li>Waka poetry (classical Japanese poetry) became an essential court art, celebrating the beauty of nature and human emotions.</li>
+          <li>Literature reached its peak with major works such as Murasaki Shikibu's The Tale of Genji, often considered the world's first psychological novel. </li>
+          <li>Emaki (illustrated scrolls), combining painting and calligraphy, enabled stories to be told through images, a tradition still influential in Japanese art.</li> <br><br>
+          This period also established aesthetic and philosophical ideals that continue to define Japanese cultural identity, such as the concept of mono no aware.</p>
+      </div>
+    </div>
+    </section>
+</div>
+<div class="block" style="background: linear-gradient(#064E3B, #4D7C0F );">
+  <h2>Kamakura period (1185-1333)</h2>
+  <section>
+    <p>The Kamakura period is marked by the decline of imperial power and the rise of Zen Buddhism, influencing culture and architecture. 
+    </p>
+      <img src="https://www.all-free-photos.com/images/japon/PI91514-hr.jpg">
+    <p><b>Monuments worth visiting:</b> Kennin-ji: Kyoto's first Zen temple, founded by Eisai. <br>
+      Tofuku-ji: A fusion of Chinese and Japanese styles, representing the rise of Zen.</p>
+      <div class="conteneur">
+    <button class="bouton-declencheur">See more</button>
+    <div class="boite-cachee">
+      <p>Kamakura period (1185-1333) <br><br>
+        This period was marked by the downfall of imperial power and the emergence of new forms of Buddhism, as seen in the creation of the Jōdo (Pure Land) school. It was also characterized by the rise of Zen, profoundly influencing the culture and architecture of the period. <br><br>
+        Monuments to visit from this period:
+        <li>Kennin-ji (1202): Kyoto's first Zen temple, founded by Eisai.</li>
+        <li>Tofuku-ji (1236): A fusion of Chinese and Japanese styles, representing the rise of Zen.</li></p>
+    </div>
+  </div>
+</section>
+</div>
+<div class="block" style="background: linear-gradient(#4D7C0F, #9A3412 );">
+  <h2>Muromachi period (1336-1573)</h2>
+  <section>
+    <div class="block-img-txt" style="text-align: left;flex-wrap: nowrap;flex-direction: row;">
+      <img style="width: 50%;height: auto;"src="https://img.freepik.com/free-photo/beautiful-kinkakuji-temple-with-golden-pavillion-kyoto-japan_74190-2273.jpg?t=st=1735850462~exp=1735854062~hmac=1e8527edea978e9761255d69a6e28cf794746e880bd6350a9cd359fbc908cc5e&w=740">  
+      <div class="texte" style="width: 40%;">    
+          <p>
+            <ul>This was a period of great cultural effervescence under the influence of Zen Buddhism, which inspired :
+              <li>Dry gardens (such as at Ryoan-ji)</li>
+              <li>Tea ceremony</li>
+              <li>The art of monochromatic painting</li> 
+              <li>Nô theater</li>
+            </ul>
+          </p>
+      </div>  
+  </div>
+  <p>However, the period was also marked by conflicts, notably the Ōnin War (1467-1477), which caused the partial destruction of Kyoto. The power of the shogunate declined, leaving the daimyō to dominate politically.</p>
+  <p><b>Monument worth visiting:</b>  the Kinkaku-ji (Golden Pavilion) symbolize this cultural golden age.</p>
+  <div class="conteneur">
+    <button class="bouton-declencheur">See more</button>
+    <div class="boite-cachee">
+      <p>Muromachi period (1336-1573) <br><br>
+        The Muromachi period, which lasted from 1336 to 1573, was deeply marked by the Ashikaga shogunate, based in Kyoto's Muromachi district, which gave its name to the era. It began with Ashikaga Takauji, founder of the shogunate, who overthrew the emperor Go-Daigo, and ended in 1573 when Oda Nobunaga exiled the last Ashikaga shogun, Yoshiaki, bringing the dynasty to an end. <br><br>
+        This was a period of great cultural effervescence under the influence of Zen Buddhism, which inspired : <br>
+        <li>Dry gardens (karesansui): created for Zen meditation, they reached their apogee with masterpieces such as Ryoan-ji.</li>
+        <li>Tea ceremony (chanoyu): Codified during this period, it reflects the Zen aesthetic of wabi-sabi, beauty in simplicity and imperfection.</li> 
+        <li>Monochromatic painting (sumi-e): Influenced by Chinese art, it explores shades of black and shadow, embodied by artists like Sesshū Tōyō.</li> 
+        <li>Nō theater, perfected by Zeami, became a major dramatic form, blending poetry, music and dance in a deeply symbolic and spiritual style.</li> <br>
+        Architecturally, emblematic monuments such as the Kinkaku-ji (Golden Pavilion), built by the shogun Ashikaga Yoshimitsu, bear witness to the elegance and refinement of this period. <br><br>
+        Conflict and the Decline of the Shogunate <br><br>
+        However, the Muromachi period was not without its troubles. It was severely marked by the Ōnin War (1467-1477), a devastating conflict between samurai factions that ravaged Kyoto and plunged Japan into the Sengoku era, a period of civil wars. As a result, the city suffered partial destruction, and the power of the Ashikaga shogunate weakened considerably, leaving the daimyō to dominate politically. Despite this instability, the Muromachi period remains an era of major cultural and artistic transition in Japanese history.</p>
+    </div>
+  </div>
+  </section>
+</div>
+<div class="block" style="background: linear-gradient(#9A3412, #DC2626 );">
+  <h2>The Azuchi-Momoyama (1573-1603) and Edo (1603-1868) periods</h2>
+  <section>
+    <p>During this period, Kyoto was transformed politically, culturally and architecturally.</p>
+    <div class="block-img-txt" style="text-align: left;flex-wrap: nowrap;flex-direction: row;">
+      <img style="width: 50%;height: auto;"src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Fushimi_momoyaja_jyou_1.jpg">  
+      <div class="texte" style="width: 40%;">    
+          <p>
+            Particularly under Toyotomi Hideyoshi, the city was reborn with projects such as the Fushimi-Momoyama castle, a symbol of grandiosity, and urban redevelopment to strengthen its economic role.
+          </p>
+      </div>  
+  </div>
+  <p>Kyoto became a flourishing cultural center, combining visual arts, tea ceremony and theater in a more luxurious style.</p>
+  <p><b>Monument worth visiting:</b> Fushimi-Momoyama Castle</p>
+  <div class="conteneur">
+    <button class="bouton-declencheur">See more</button>
+    <div class="boite-cachee">
+      <p>The Azuchi-Momoyama (1573-1603) and Edo (1603-1868) periods: 
+        These two periods mark crucial moments in Japanese history, profoundly transforming Kyoto, the former imperial capital, politically, culturally and architecturally.<br>
+        <ul>The Azuchi-Momoyama period extends from the fall of the Muromachi shogunate to the establishment of the Tokugawa shogunate. It was a turbulent period, marked by the gradual unification of Japan under three great figures:</ul>
+        <li>Oda Nobunaga, known for his decisive military campaigns.</li>
+        <li>Toyotomi Hideyoshi, the “great unifier” who consolidates power.</li>
+        <li>Tokugawa Ieyasu, who established lasting peace under the Tokugawa shogunate.</li> <br>
+        Despite the ravages of the Sengoku-jidai civil wars, Kyoto experienced a veritable renaissance under Toyotomi Hideyoshi, who undertook ambitious projects to rebuild and modernize the city.
+        Rehabilitation of the city: Hideyoshi restructures Kyoto by reinforcing its fortifications to protect the city, while at the same time improving its viability: <br> <br>
+        <li>Building new roads to facilitate travel.</li>
+        <li>Development of canals for river trade, strengthening Kyoto's economic role.</li>
+        <li>Reorganization of neighborhoods to modernize urban planning and promote safety.</li>
+        <br>
+        A thriving cultural center: During the Azuchi-Momoyama era, Kyoto remained a mecca of Japanese culture, where the visual arts, tea ceremony and theater continued to flourish, marking the transition to a more flamboyant, luxurious style.</p>
+    </div>
+  </div>
+  </section>
+</div>
+<footer>
+  <div class="footer-container">
+      <div style="width:40%">
+          <h3>Who are we ?</h3>
+          <p>
+              We are students in BUT 1 computer science who have created this site as part of a project involving the creation of a website offering visits to monuments and places in Kyoto, with the aim of cultural and digital mediation in partnership with UNESCO.
+          </p>
+      </div>
+      <div >
+          <h3>Contact</h3>
+          <p><u>Thinojan Pulendran :</u> thinojan.pulendran@edu.univ-eiffel.fr</p>
+          <p><u>Clara DRIEUX :</u> clara.drieux@edu.univ-eiffel.fr</p>
+          <p><u>DUMUR Sébastien :</u> sebastien.dumur@edu.univ-eiffel.fr</p>
+          <p><u>Valentin CARCHON :</u> valentin.carchon@edu.univ-eiffel.fr</p>
+          <p><u>Matéo VENDEMAN--LARBI BEN HAMMOU :</u> vendemanlarbib@edu.univ-eiffel.fr</p>
+      </div>
+      <div>
+          <h3>Legal information</h3>
+          <p>Université Gustave Eiffel, 5 boulevard Descartes
+              Champs-sur-Marne <br>
+              77454 Marne-la-Vallée cedex 2</p>
+      </div>
+  </div>
+</footer>
+</body>
+</html>
