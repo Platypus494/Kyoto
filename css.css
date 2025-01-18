@@ -114,7 +114,8 @@ body {
     padding-top:80px;
     padding-left:60px;
     font-family: 'Cicle', sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 1.5;
 }
 
 h2 {
@@ -163,6 +164,7 @@ section {
     text-align: center;
     margin-bottom: 50px;
     margin-top: 50px;
+    padding: 20px;
 }
 table {
     padding-bottom: 50px;
@@ -205,6 +207,102 @@ table {
 .footer-container p {
     margin: 5px 0;
 }
+
+.main-content {
+    padding: 20px;  
+}
+
+.carrousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 20px auto;
+}
+.carrousel {
+    display: flex;
+    animation: defilement 50s linear infinite;
+}
+.carrousel img {
+    width: 20%;
+    flex: 0 0 auto;
+    border-radius: 10px;
+    margin: 0 5px; 
+}
+
+@keyframes defilement {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.itinerary-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 100px;
+}
+
+.itinerary-container img {
+    width: 30%;
+    border-radius: 10px;
+}
+
+.itinerary-container .section {
+    width: 45%;
+}
+
+.bienseance-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 100px;
+}
+
+.bienseance-container img {
+    width: 40%;
+    border-radius: 10px;
+}
+
+.bienseance-container .section {
+    width: 45%;
+}
+
+.Titre-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.Titre-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Titre-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, #333333 100%);
+}
+
+.Image-title {
+    position: absolute;
+    top: 125px;
+    left: 20px;
+    color: white;
+    font-size: 2.5rem;
+    width: 20%;
+    background-color: #33333344;
+}
+
 @media (max-width: 1000px) {
     .img_secondaire{
         width: 90%;

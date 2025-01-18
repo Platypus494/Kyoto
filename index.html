@@ -9,119 +9,9 @@
     <link rel="stylesheet" href="css.css">
     <style>
         body {
-            background-color:#333333;
-            color: white;
             margin: 0;
             padding: 0;
         }
-
-        .main-content {
-            padding: 20px;  
-        }
-        .section {
-            background-color: #505050;
-            border-radius: 10px;
-            margin: 20px 0;
-            padding: 20px;
-            border: 2px solid #F7AF3E;
-        }
-
-        .section p {
-            font-size: 1rem;
-            line-height: 1.5;
-        }
-
-        .carrousel-container {
-            width: 100%;
-            overflow: hidden;
-            position: relative;
-            margin: 20px auto;
-        }
-        .carrousel {
-            display: flex;
-            animation: defilement 50s linear infinite;
-        }
-        .carrousel img {
-            width: 20%;
-            flex: 0 0 auto;
-            border-radius: 10px;
-            margin: 0 5px; 
-        }
-
-        @keyframes defilement {
-            from {
-                transform: translateX(0);
-            }
-            to {
-                transform: translateX(-100%);
-            }
-        }
-
-        .itinerary-container {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 100px;
-        }
-
-        .itinerary-container img {
-            width: 30%;
-            border-radius: 10px;
-        }
-
-        .itinerary-container .section {
-            width: 45%;
-        }
-
-        .bienseance-container {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 100px;
-        }
-
-        .bienseance-container img {
-            width: 40%;
-            border-radius: 10px;
-        }
-
-        .bienseance-container .section {
-            width: 45%;
-        }
-
-        .Titre-container {
-            position: relative;
-            width: 100%;
-            height: 100vh;
-            overflow: hidden;
-        }
-
-        .Titre-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .Titre-container::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, #333333 100%);
-        }
-
-        .Image-title {
-            position: absolute;
-            top: 125px;
-            left: 20px;
-            color: white;
-            font-size: 2.5rem;
-            width: 20%;
-            background-color: #33333344;
-        }
-
     </style>
 </head>
 <body>
@@ -198,15 +88,15 @@
         <h1>Préparer son itinéraire</h1>
         <div class="itinerary-container">
             <img src="https://images-ext-1.discordapp.net/external/XYk4OSiL5kBXqeof0rb-k0RP31_v8fTQPrUftIgZQrM/https/upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Kyotomap-fr.svg/735px-Kyotomap-fr.svg.png?format=webp&quality=lossless" alt="Carte Kyoto">
-            <div class="section">
+            <section>
                 <p>
                     La préparation d'un itinéraire est essentielle pour profiter au mieux de Kyoto. Avec ses nombreux monuments et lieux incontournables, une bonne planification permettra de gagner du temps et de ne rien rater !
                 </p>
-            </div>
+            </section>
         </div>
         <h1>Les règles de bienséance à Kyoto</h1>
         <div class="bienseance-container">
-            <div class="section">
+            <section>
                 <p>
                     Une fois que vous êtes arrivé à Kyoto, il se peut qu’on vous regarde de travers à cause de tatouages ou de 
                     comportements que vous faites qui peuvent perturber les habitants. Il faut donc, avant d’aller à Kyoto, 
@@ -214,7 +104,7 @@
                     <br>
                     <a href="bienseance.html">savoir plus</a> 
                 </p>
-            </div>
+            </section>
             <img src="geisha.png" alt="Image des règles de bienséance">  
         </div>
     </div>
