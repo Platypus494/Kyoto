@@ -19,6 +19,7 @@ a {
     width: 20%;
 }
 footer {
+    font-size: 2rem;
     background-color: #333;
     color: #fff;
     text-align: center;
@@ -102,7 +103,7 @@ li{
     border-radius: 60px;
 }
 h1 {
-    font-size: 45px;
+    font-size: 4rem;
     color:#F7AF3E ;
     text-align: center;
     font-family: "Dyno Bold";
@@ -119,7 +120,7 @@ body {
 }
 
 h2 {
-    font-size: 64px;
+    font-size: 3rem;
     color:#F7AF3E ;
     font-family: "Dyno Bold";
 }
@@ -256,23 +257,7 @@ table {
     border-radius: 10px;
 }
 
-.itinerary-container .section {
-    width: 45%;
-}
-
-.bienseance-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 100px;
-}
-
-.bienseance-container img {
-    width: 40%;
-    border-radius: 10px;
-}
-
-.bienseance-container .section {
+.itinerary-container section {
     width: 45%;
 }
 
@@ -357,22 +342,32 @@ table {
               transform-origin: 50% 100%;
     }
   }
+  .qui {
+    width: 40%;
+  }
 @media (max-width: 1000px) {
     .img_secondaire{
         width: 90%;
         margin: 40px;
     }
+    .qui {
+        width:100%
+    }
     p,li,ul {
         font-size: 16px;
     }
 
-    .block-img-txt,.block-img-txt2 {
+    .block-img-txt,.block-img-txt2,.itinerary-container,.footer-container {
         flex-direction: column;
     }
-    .block-img-txt2 img{
+    .block-img-txt2 img,.itinerary-container img{
         width: 100%;
     }
-    .texte {
+
+    .itinerary-container section {
+        width: 70%;
+    }
+    .texte{
         width: 100%;
     }
     h1 {
