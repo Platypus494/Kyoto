@@ -178,7 +178,13 @@ table {
     flex-direction: row;
     align-items: center;
 }
-
+.block-img-txt2 {
+    text-align: left;flex-wrap: nowrap;flex-direction: row;display: flex;align-items: center;
+}
+.block-img-txt2 img {
+    width: 50%;
+    height: auto;
+}
 .block {
     padding: 40px;
     background-color: #1E3A84;
@@ -302,7 +308,55 @@ table {
     width: 20%;
     background-color: #33333344;
 }
+.conteneur {
+    text-align: center;
+  }
 
+  .bouton-declencheur {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .bouton-declencheur:hover {
+    background-color: #0056b3;
+  }
+
+  .boite-cachee {
+    display: none;
+    opacity: 0;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #505050;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: visibility 0.4s, opacity 0.4s;
+  }
+  .bouton-declencheur:focus + .boite-cachee {
+    display:block;
+    opacity: 1;
+    -webkit-animation: scale-up-bottom 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation: scale-up-bottom 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+  @keyframes scale-up-bottom {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+    }
+  }
 @media (max-width: 1000px) {
     .img_secondaire{
         width: 90%;
@@ -311,17 +365,21 @@ table {
     p,li,ul {
         font-size: 16px;
     }
-    .block-img-txt {
+
+    .block-img-txt,.block-img-txt2 {
         flex-direction: column;
     }
+    .block-img-txt2 img{
+        width: 100%;
+    }
     .texte {
-        width: 70%;
+        width: 100%;
     }
     h1 {
         font-size: 60px;
     }
     h2 {
-        font-size:44px;
+        font-size:34px;
     }
 }
 
