@@ -27,7 +27,6 @@ footer {
     border: 2px solid #F7AF3E;
 }
 .Image-image {
-    height: 1600px;
     border-radius: 10px;
     padding-top: 5%;
 }
@@ -93,8 +92,8 @@ li{
 }
 .img_princi{
     width:100vw;
-    height:auto;
-    margin-left: -85px;
+    margin-left: -70px;
+    
 }
 .img_secondaire{
     width:50%;
@@ -195,9 +194,16 @@ table {
 .block >section {
     text-align: center;
     padding: 40px;
+    padding-top: 20px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.block  .block-img-txt2 p{
+    margin-top: -50px;
 }
 .block img {
-    width: 80%;
+    width: 50%;
 }
 
 .footer-container {
@@ -264,7 +270,7 @@ table {
 .Titre-container {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 70vh;
     overflow: hidden;
 }
 
@@ -346,6 +352,9 @@ table {
     width: 40%;
   }
 @media (max-width: 1000px) {
+    .Image-title{
+        width: 35%;
+    }
     .img_secondaire{
         width: 90%;
         margin: 40px;
