@@ -19,7 +19,7 @@ a {
     width: 20%;
 }
 footer {
-    font-size: 2rem;
+    font-size: 1rem;
     background-color: #333;
     color: #fff;
     text-align: center;
@@ -70,8 +70,7 @@ li{
 .sous-elt {
     display:none;
     list-style: none;
-    width: 100%;
-    background-color: rgb(214, 185, 141);
+    width: 140%;
     position: absolute;
     top: 100%;
     margin: 0;
@@ -85,7 +84,8 @@ li{
 }
 
 .sous-elt li {
-    width: 100px;
+    float:none;
+    width: 100%;
     background-color: rgb(214, 185, 141);
 }
 .sous-elt li:hover {
@@ -189,15 +189,17 @@ table {
 .block {
     padding: 40px;
     background-color: #1E3A84;
-    margin-left: 5%;
-    margin-right:5% ;
+    margin-left: 10%;
+    margin-right:10% ;
 }
 .block >section {
     text-align: center;
     padding: 40px;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 .block img {
-    width: 80%;
+    width: 70%;
 }
 
 .footer-container {
