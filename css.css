@@ -1,3 +1,5 @@
+/* header */
+
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -20,14 +22,7 @@ a {
     margin:0px 20px 0px 0px;
     padding:0px 0px;
 }
-footer {
-    font-size: 1rem;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    margin-top: 20px;
-    border: 2px solid #F7AF3E;
-}
+
 .Image-image {
     border-radius: 10px;
     padding-top: 5%;
@@ -52,6 +47,8 @@ header * {
     font-size: 16px;
     line-height: 1;
  }
+
+/* navigation et sous menu */
 nav menuitem {
     position:relative;
     display:block;
@@ -79,9 +76,7 @@ nav menuitem {
     transform:translateX(100%);
     top:0; right:0;
  }
- /* User Styles Below Not Required */
- /* User Styles Below Not Required */
- /* User Styles Below Not Required */
+
  
  nav .sousenca {
     background: #ea5c0d;
@@ -157,6 +152,16 @@ nav .enca:hover:before, nav .sousenca:hover:before {
     transform:translateX(0) translateY(0%);
     opacity: 1;
  }
+
+ footer {
+    font-size: 1rem;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    border: 2px solid #F7AF3E;
+}
+
 .img_princi{
     width:100vw;
     margin-left: -70px;
