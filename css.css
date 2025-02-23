@@ -170,7 +170,6 @@ nav .enca:hover:before, nav .sousenca:hover:before {
 .img_secondaire{
     width:50%;
     height:auto;
-    padding-right: 40px;
     border-radius: 60px;
 }
 h1 {
@@ -245,6 +244,7 @@ table {
 .texte {
     display: block;
     width: 40%;
+    margin-left: 4%;
 }
 .block-img-txt {
     display: flex;
@@ -267,7 +267,7 @@ table {
 .block >section {
     text-align: center;
     padding: 40px;
-    margin-left: 15%;
+    margin-left: 11%;
     margin-right: 15%;
     padding-top: 20px;
     width: 70%;
@@ -466,6 +466,10 @@ table {
         display: none;
     }
 
+    .ban {
+        width: 25%;
+    }
+    
     #lab_petit {
         text-align: left;
         display:flex;
@@ -475,20 +479,25 @@ table {
         position: relative;
         top:-40px
     }
-    #ch:checked + .menu_petit {
-        display: block;
+    
+    #ch:checked + .menu_petit:not(.imglangpetit) {
+        display: flex;
+        flex-direction: column; 
         position: relative;
-        left:10px;
+        align-items: flex-start;
+        justify-content: flex-start;
         list-style: none;
-        top:-60px;
+        top : -50px;
         background-color: rgba(183,74,14,1);
-        width: fit-content;
+        width: 180px;
+        height: 100vh;
     }
-
+    
     #ch:checked + .menu_petit >li {
-        position: relative;
-        left: -40px;
-        padding-left: -70px;
+        /* position: relative;
+        left: 40px;
+        padding-left: -70px; */
+        width: 100%;
     }
     .logo2 {
         background-color: gray;
@@ -496,14 +505,16 @@ table {
         height: auto;
        margin-top: 40px;
     }
+    
     header {
         height: 10%;
         width: 100%;
     }
+
     #ch:checked + .menu_petit .imglangpetit {
-        display: block;
+        display: inline-block;
         width: 40px;
         height: auto;
-
-    }
+    } 
+      
 }
