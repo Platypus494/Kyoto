@@ -249,7 +249,7 @@ table {
     display: flex;
     flex-direction: row;
     align-items: center;
-    box-shadow: 0 90px 100px 100px black;
+    box-shadow: 90px 0 100px 100px black;
 }
 .block-img-txt2 {
     text-align: left;flex-wrap: nowrap;flex-direction: row;display: flex;align-items: center;
