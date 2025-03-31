@@ -244,12 +244,12 @@ table {
     display: block;
     width: 40%;
     margin-left: 4%;
+    box-shadow: 90px 0 100px 100px black;
 }
 .block-img-txt {
     display: flex;
     flex-direction: row;
     align-items: center;
-    box-shadow: 90px 0 100px 100px black;
 }
 .block-img-txt2 {
     text-align: left;flex-wrap: nowrap;flex-direction: row;display: flex;align-items: center;
