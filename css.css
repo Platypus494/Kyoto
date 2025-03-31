@@ -165,7 +165,6 @@ nav .enca:hover:before, nav .sousenca:hover:before {
 .img_princi{
     width:100vw;
     margin-left: -70px;
-    box-shadow: 0 90px 100px 100px black;
 }
 .img_secondaire{
     width:50%;
@@ -250,6 +249,7 @@ table {
     display: flex;
     flex-direction: row;
     align-items: center;
+    box-shadow: 0 90px 100px 100px black;
 }
 .block-img-txt2 {
     text-align: left;flex-wrap: nowrap;flex-direction: row;display: flex;align-items: center;
