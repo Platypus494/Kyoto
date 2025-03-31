@@ -191,16 +191,20 @@ body {
     line-height: 1.5;
 }
 
-
+body #test {
+    position: relative;
+    left : -68px;
+    top : -20px;
+}
 
 #test {
     background-image: url("https://cdn.pixabay.com/photo/2015/09/21/15/10/geisha-949978_1280.jpg");
-    width: 100%;
-    height: 800px;
-    background-size : contain;
+    width: 104.6%;
+    height: 1000px;
+    background-size : 100% 120%;
     background-repeat: no-repeat;
     position: relative ;
-    box-shadow: #333333 0px -200px 50px -28px inset;
+    box-shadow: #333333 0px -100px 50px -28px inset;
 }
 
 h2 {
