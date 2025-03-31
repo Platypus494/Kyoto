@@ -165,7 +165,7 @@ nav .enca:hover:before, nav .sousenca:hover:before {
 .img_princi{
     width:100vw;
     margin-left: -70px;
-    
+    box-shadow: 0 90px 100px 100px black;
 }
 .img_secondaire{
     width:50%;
